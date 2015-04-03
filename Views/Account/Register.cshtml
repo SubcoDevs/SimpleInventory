@@ -1,0 +1,54 @@
+﻿@model InventoryManagement.Models.RegisterModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>Create a new account.</h2>
+</hgroup>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+
+    <fieldset>
+        <legend>Registration Form</legend>
+        <ol>
+            <li>
+                @Html.LabelFor(m => m.UserName)
+                @Html.TextBoxFor(m => m.UserName)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.ConfirmPassword)
+                @Html.PasswordFor(m => m.ConfirmPassword)
+            </li>
+            <li>
+                @Html.Label("Client list")
+                @Html.DropDownList("Id", (SelectList)ViewBag.Id, "--Select Client--")
+            </li>
+
+            <li>
+                @Html.Label("UserRole - ")
+            </li>
+
+            <li>
+                @Html.RadioButton("radiobutton1", "3") @ViewBag.role2
+                @Html.RadioButton("radiobutton1", "5") @ViewBag.role3
+                @Html.RadioButton("radiobutton1", "4") @ViewBag.role4
+                @Html.RadioButton("radiobutton1", "2") @ViewBag.role0
+
+            </li>
+
+        </ol>
+        <input type="submit" value="Register" />
+    </fieldset>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

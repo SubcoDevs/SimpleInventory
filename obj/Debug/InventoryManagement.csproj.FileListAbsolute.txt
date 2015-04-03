@@ -1,0 +1,210 @@
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\InventoryManagement.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\InventoryManagement.pdb
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\Antlr3.Runtime.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\DotNetOpenAuth.AspNet.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\DotNetOpenAuth.Core.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\DotNetOpenAuth.OAuth.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\DotNetOpenAuth.OpenId.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\EntityFramework.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\Newtonsoft.Json.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\System.Web.Helpers.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\System.Web.Mvc.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\System.Web.Optimization.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\System.Web.Razor.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\System.Web.WebPages.Deployment.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\System.Web.WebPages.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\System.Web.WebPages.Razor.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\WebGrease.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\WebMatrix.Data.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\WebMatrix.WebData.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\EntityFramework.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\Newtonsoft.Json.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\System.Web.Helpers.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\System.Web.Mvc.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\System.Web.Razor.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\System.Web.WebPages.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\System.Web.WebPages.Deployment.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\System.Web.WebPages.Razor.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\WebMatrix.Data.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\WebMatrix.WebData.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\DotNetOpenAuth.AspNet.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\DotNetOpenAuth.Core.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\DotNetOpenAuth.OAuth.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\DotNetOpenAuth.OpenId.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.pdb
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\PagedList.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\PagedList.Mvc.dll
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\PagedList.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\bin\PagedList.Mvc.xml
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Migrations.InitialCreate.resources
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.csproj.GenerateResource.Cache
+C:\Rohit\Projects\Inventory\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.csprojResolveAssemblyReference.cache
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\InventoryManagement.dll.config
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\InventoryManagement.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\InventoryManagement.pdb
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\Antlr3.Runtime.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.AspNet.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.Core.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OAuth.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OpenId.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\EntityFramework.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\Microsoft.Web.Infrastructure.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\Newtonsoft.Json.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\PagedList.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\PagedList.Mvc.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Net.Http.Formatting.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Helpers.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Http.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Http.WebHost.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Mvc.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Optimization.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Razor.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.Deployment.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.Razor.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\WebGrease.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\WebMatrix.Data.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\WebMatrix.WebData.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\PagedList.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\PagedList.Mvc.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\EntityFramework.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\Newtonsoft.Json.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Net.Http.Formatting.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Helpers.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Http.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Http.WebHost.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Mvc.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Razor.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.Deployment.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.Razor.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\WebMatrix.Data.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\WebMatrix.WebData.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.AspNet.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.Core.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OAuth.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OpenId.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.csprojResolveAssemblyReference.cache
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.Migrations.InitialCreate.resources
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.csproj.GenerateResource.Cache
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.dll
+D:\shachi_work\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.pdb
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\InventoryManagement.dll.config
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\InventoryManagement.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\InventoryManagement.pdb
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\Antlr3.Runtime.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.AspNet.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.Core.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OAuth.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OpenId.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\EntityFramework.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\Microsoft.Web.Infrastructure.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\Newtonsoft.Json.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\PagedList.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\PagedList.Mvc.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Net.Http.Formatting.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Helpers.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Http.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Http.WebHost.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Mvc.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Optimization.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Razor.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.Deployment.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.Razor.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\WebGrease.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\WebMatrix.Data.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\WebMatrix.WebData.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\PagedList.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\PagedList.Mvc.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\EntityFramework.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\Newtonsoft.Json.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Net.Http.Formatting.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Helpers.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Http.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Http.WebHost.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Mvc.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Razor.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.Deployment.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.Razor.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\WebMatrix.Data.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\WebMatrix.WebData.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.AspNet.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.Core.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OAuth.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OpenId.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.csprojResolveAssemblyReference.cache
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.Migrations.InitialCreate.resources
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.csproj.GenerateResource.Cache
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.dll
+D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.pdb
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\InventoryManagement.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\InventoryManagement.pdb
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\Antlr3.Runtime.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.AspNet.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.Core.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OAuth.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OpenId.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\EntityFramework.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\Newtonsoft.Json.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\PagedList.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\PagedList.Mvc.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Helpers.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Mvc.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Optimization.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Razor.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.Deployment.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.Razor.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\WebGrease.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\WebMatrix.Data.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\WebMatrix.WebData.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\PagedList.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\PagedList.Mvc.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\EntityFramework.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\Newtonsoft.Json.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Helpers.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Mvc.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Razor.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.Deployment.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.Razor.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\WebMatrix.Data.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\WebMatrix.WebData.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.AspNet.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.Core.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OAuth.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OpenId.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.csprojResolveAssemblyReference.cache
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.Migrations.InitialCreate.resources
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.csproj.GenerateResource.Cache
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.dll
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.pdb

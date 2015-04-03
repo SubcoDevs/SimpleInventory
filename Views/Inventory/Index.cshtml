@@ -1,0 +1,140 @@
+﻿@model IPagedList<InventoryManagement.Models.Product>
+
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Inventory Home Page";
+}
+
+<h2>Product List</h2>
+
+@using (Html.BeginForm())
+{      
+<table>
+<tr>
+<th style="border: 2px solid black; text-align: center;">                
+        @Html.ActionLink("Product ID", "Index", 
+            new { sortOrder = "Id", CurrentSort = ViewBag.CurrentSort })
+</th>
+<th style="border: 2px solid black; text-align: center;">
+        @Html.ActionLink("Product Name", "Index", 
+            new { sortOrder = "Name",  CurrentSort = ViewBag.CurrentSort })
+</th>
+<th style="border: 2px solid black; text-align: center;">
+        @Html.ActionLink("Brand", "Index", 
+            new { sortOrder = "Brand",  CurrentSort = ViewBag.CurrentSort })
+</th>
+<th style="border: 2px solid black; text-align: center;">
+        @Html.ActionLink("Tags", "Index", 
+            new { sortOrder = "Tags",  CurrentSort = ViewBag.CurrentSort })
+</th>
+<th style="border: 2px solid black; text-align: center;">
+        @Html.ActionLink("Wholesale Price", "Index", 
+            new { sortOrder = "WholesalePrice",  CurrentSort = ViewBag.CurrentSort })
+</th>
+<th style="border: 2px solid black; text-align: center;">
+        @Html.ActionLink("Retail Price", "Index", 
+            new { sortOrder = "RetailPrice",  CurrentSort = ViewBag.CurrentSort })
+</th>
+<th style="border: 2px solid black; text-align: center;">
+        @Html.ActionLink("Buy Price", "Index", 
+            new { sortOrder = "BuyPrice",  CurrentSort = ViewBag.CurrentSort })
+</th>
+<th style="border: 2px solid black; text-align: center;">
+        @Html.ActionLink("Initial Cost Price", "Index", 
+            new { sortOrder = "InitialCostPrice",  CurrentSort = ViewBag.CurrentSort })
+</th>
+<th style="border: 2px solid black; text-align: center;">
+        @Html.ActionLink("Stock", "Index", 
+            new { sortOrder = "Stock",  CurrentSort = ViewBag.CurrentSort })
+</th>
+<th style="border: 2px solid black; text-align: center;">
+        @Html.ActionLink("Taxable", "Index", 
+            new { sortOrder = "Taxable",  CurrentSort = ViewBag.CurrentSort })
+</th>
+<th style="border: 2px solid black; text-align: center;">
+        @Html.ActionLink("Manage Stock", "Index", 
+            new { sortOrder = "ManageStock",  CurrentSort = ViewBag.CurrentSort })
+</th>
+<th style="border: 2px solid black; text-align: center;">
+        @Html.ActionLink("Keep Selling", "Index", 
+            new { sortOrder = "KeepSelling",  CurrentSort = ViewBag.CurrentSort })
+</th>
+<th style="border: 2px solid black; text-align: center;">
+        @Html.ActionLink("Publish Online", "Index", 
+            new { sortOrder = "PublishOnline",  CurrentSort = ViewBag.CurrentSort })
+</th>
+<th style="border: 2px solid black; text-align: center;">
+        @Html.ActionLink("Online Ordering", "Index", 
+            new { sortOrder = "OnlineOrdering",  CurrentSort = ViewBag.CurrentSort })
+</th>
+<th style="border: 2px solid black; text-align: center;">
+    <th style="border: 2px solid black; text-align: center;">
+    
+</th>
+</tr>
+@foreach (var item in Model)
+{
+    <tr>
+    <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+        @Html.DisplayFor(modelItem => item.Id)
+    </td>
+    <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+        @Html.DisplayFor(modelItem => item.Name)
+    </td>
+    <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+        @Html.DisplayFor(modelItem => item.Brand)
+    </td>
+    <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+        @Html.DisplayFor(modelItem => item.Tags)
+    </td>
+    <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+        @Html.DisplayFor(modelItem => item.WholesalePrice)
+    </td>
+    <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+        @Html.DisplayFor(modelItem => item.RetailPrice)
+    </td>
+    <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+        @Html.DisplayFor(modelItem => item.BuyPrice)
+    </td>
+    <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+        @Html.DisplayFor(modelItem => item.InitialCostPrice)
+    </td>
+    <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+        @Html.DisplayFor(modelItem => item.Stock)
+    </td>
+    <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+        @Html.DisplayFor(modelItem => item.Taxable)
+    </td>
+    <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+        @Html.DisplayFor(modelItem => item.ManageStock)
+    </td>
+    <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+        @Html.DisplayFor(modelItem => item.KeepSelling)
+    </td>
+    <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+        @Html.DisplayFor(modelItem => item.PublishOnline)
+    </td>
+    <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+        @Html.DisplayFor(modelItem => item.OnlineOrdering)
+    </td>
+    <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+        @Html.ActionLink("Edit", "Edit", new {id = item.Id})
+    </td>
+        <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+        @Html.ActionLink("Delete", "Delete", new {id = item.Id})
+    </td>
+    </tr>
+}
+</table> 
+<br />
+    <div>
+        @Html.ActionLink("Register", "Register", "Account") create new users.
+    </div>
+<div id='Paging' style="text-align:right">
+    Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+    of @Model.PageCount
+
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+</div>
+}           
