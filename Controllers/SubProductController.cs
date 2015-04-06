@@ -2,13 +2,16 @@
 using PagedList;
 using System;
 using System.Collections.Generic;
-using System.Data;
+using System.Data.Entity;
 using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+
 
 namespace InventoryManagement.Controllers
 {
@@ -28,7 +31,14 @@ namespace InventoryManagement.Controllers
             IPagedList<SubProduct> subproduct1 = null;
             subproduct1 = db.SubProducts.OrderByDescending
                                (m => m.Id).Where(m => m.ProductId == product_id).ToPagedList(1, 10);
-              
+
+            //ProductDb context = new ProductDb();
+            //var affectedRows = context.Database.ExecuteSqlCommand("Get_Subproduct_data @ProductId",
+            //new System.Data.SqlClient.SqlParameter("@ProductId", product_id));
+
+          //  IPagedList<SubProduct> subproduct1 = affectedRows;
+
+
             return View(subproduct1);
            // return View(db.SubProducts.ToList());
         }

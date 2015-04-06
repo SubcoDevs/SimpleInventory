@@ -22,7 +22,8 @@ namespace InventoryManagement.Controllers
 
         
 
-        public ActionResult Index(string sortOrder, string CurrentSort, int? page)
+        //public ActionResult Index(string sortOrder, string CurrentSort, int? page)
+        public ActionResult Index()
         {
 
             if (User.IsInRole("AdminWebSite") == true)
@@ -30,15 +31,15 @@ namespace InventoryManagement.Controllers
                 return RedirectToAction("Index", "Client");
             }
 
-            int pageSize = 10;
-            int pageIndex = 1;
-            pageIndex = page.HasValue ? Convert.ToInt32(page) : 1;
+            //int pageSize = 10;
+            //int pageIndex = 1;
+            //pageIndex = page.HasValue ? Convert.ToInt32(page) : 1;
 
-            ViewBag.CurrentSort = sortOrder;
+            //ViewBag.CurrentSort = sortOrder;
 
-            sortOrder = String.IsNullOrEmpty(sortOrder) ? "Id" : sortOrder;
+            //sortOrder = String.IsNullOrEmpty(sortOrder) ? "Id" : sortOrder;
 
-            IPagedList<Product> products = null;
+         //   IPagedList<Product> products = null;
 
             var username = User.Identity.Name;
             var user = _db.UserProfiles.SingleOrDefault(u => u.UserName.ToLower() == username);
@@ -46,142 +47,142 @@ namespace InventoryManagement.Controllers
             TempData["clientId"] = clientId;
 
 
-            switch (sortOrder)
-            {
-                case "Id":
-                    if (sortOrder.Equals(CurrentSort))
-                        products = _db.Products.OrderByDescending
-                                (m => m.Id).Where(m=>m.ClientId == clientId).ToPagedList(pageIndex, pageSize);
-                                //(m => m.Id).ToPagedList(pageIndex, pageSize);
-                    else
-                        products = _db.Products.OrderBy
-                                (m => m.Id).Where(m => m.ClientId == clientId).ToPagedList(pageIndex, pageSize);
-                                //(m => m.Id).ToPagedList(pageIndex, pageSize);
-                    break;
-                case "Name":
-                    if (sortOrder.Equals(CurrentSort))
-                        products = _db.Products.OrderByDescending
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    else
-                        products = _db.Products.OrderBy
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    break;
+            //switch (sortOrder)
+            //{
+            //    case "Id":
+            //        if (sortOrder.Equals(CurrentSort))
+            //            products = _db.Products.OrderByDescending
+            //                    (m => m.Id).Where(m=>m.ClientId == clientId).ToPagedList(pageIndex, pageSize);
+            //                    //(m => m.Id).ToPagedList(pageIndex, pageSize);
+            //        else
+            //            products = _db.Products.OrderBy
+            //                    (m => m.Id).Where(m => m.ClientId == clientId).ToPagedList(pageIndex, pageSize);
+            //                    //(m => m.Id).ToPagedList(pageIndex, pageSize);
+            //        break;
+            //    case "Name":
+            //        if (sortOrder.Equals(CurrentSort))
+            //            products = _db.Products.OrderByDescending
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        else
+            //            products = _db.Products.OrderBy
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        break;
 
-                case "Brand":
-                    if (sortOrder.Equals(CurrentSort))
-                        products = _db.Products.OrderByDescending
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    else
-                        products = _db.Products.OrderBy
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    break;
+            //    case "Brand":
+            //        if (sortOrder.Equals(CurrentSort))
+            //            products = _db.Products.OrderByDescending
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        else
+            //            products = _db.Products.OrderBy
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        break;
 
-                case "Tags":
-                    if (sortOrder.Equals(CurrentSort))
-                        products = _db.Products.OrderByDescending
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    else
-                        products = _db.Products.OrderBy
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    break;
+            //    case "Tags":
+            //        if (sortOrder.Equals(CurrentSort))
+            //            products = _db.Products.OrderByDescending
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        else
+            //            products = _db.Products.OrderBy
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        break;
 
-                case "WholesalePrice":
-                    if (sortOrder.Equals(CurrentSort))
-                        products = _db.Products.OrderByDescending
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    else
-                        products = _db.Products.OrderBy
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    break;
+            //    case "WholesalePrice":
+            //        if (sortOrder.Equals(CurrentSort))
+            //            products = _db.Products.OrderByDescending
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        else
+            //            products = _db.Products.OrderBy
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        break;
 
-                case "RetailPrice":
-                    if (sortOrder.Equals(CurrentSort))
-                        products = _db.Products.OrderByDescending
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    else
-                        products = _db.Products.OrderBy
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    break;
+            //    case "RetailPrice":
+            //        if (sortOrder.Equals(CurrentSort))
+            //            products = _db.Products.OrderByDescending
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        else
+            //            products = _db.Products.OrderBy
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        break;
 
-                case "BuyPrice":
-                    if (sortOrder.Equals(CurrentSort))
-                        products = _db.Products.OrderByDescending
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    else
-                        products = _db.Products.OrderBy
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    break;
+            //    case "BuyPrice":
+            //        if (sortOrder.Equals(CurrentSort))
+            //            products = _db.Products.OrderByDescending
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        else
+            //            products = _db.Products.OrderBy
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        break;
 
-                case "InitialCostPrice":
-                    if (sortOrder.Equals(CurrentSort))
-                        products = _db.Products.OrderByDescending
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    else
-                        products = _db.Products.OrderBy
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    break;
+            //    case "InitialCostPrice":
+            //        if (sortOrder.Equals(CurrentSort))
+            //            products = _db.Products.OrderByDescending
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        else
+            //            products = _db.Products.OrderBy
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        break;
 
-                case "Stock":
-                    if (sortOrder.Equals(CurrentSort))
-                        products = _db.Products.OrderByDescending
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    else
-                        products = _db.Products.OrderBy
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    break;
+            //    case "Stock":
+            //        if (sortOrder.Equals(CurrentSort))
+            //            products = _db.Products.OrderByDescending
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        else
+            //            products = _db.Products.OrderBy
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        break;
 
-                case "Taxable":
-                    if (sortOrder.Equals(CurrentSort))
-                        products = _db.Products.OrderByDescending
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    else
-                        products = _db.Products.OrderBy
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    break;
+            //    case "Taxable":
+            //        if (sortOrder.Equals(CurrentSort))
+            //            products = _db.Products.OrderByDescending
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        else
+            //            products = _db.Products.OrderBy
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        break;
 
-                case "ManageStock":
-                    if (sortOrder.Equals(CurrentSort))
-                        products = _db.Products.OrderByDescending
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    else
-                        products = _db.Products.OrderBy
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    break;
+            //    case "ManageStock":
+            //        if (sortOrder.Equals(CurrentSort))
+            //            products = _db.Products.OrderByDescending
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        else
+            //            products = _db.Products.OrderBy
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        break;
 
-                case "KeepSelling":
-                    if (sortOrder.Equals(CurrentSort))
-                        products = _db.Products.OrderByDescending
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    else
-                        products = _db.Products.OrderBy
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    break;
+            //    case "KeepSelling":
+            //        if (sortOrder.Equals(CurrentSort))
+            //            products = _db.Products.OrderByDescending
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        else
+            //            products = _db.Products.OrderBy
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        break;
 
-                case "PublishOnline":
-                    if (sortOrder.Equals(CurrentSort))
-                        products = _db.Products.OrderByDescending
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    else
-                        products = _db.Products.OrderBy
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    break;
+            //    case "PublishOnline":
+            //        if (sortOrder.Equals(CurrentSort))
+            //            products = _db.Products.OrderByDescending
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        else
+            //            products = _db.Products.OrderBy
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        break;
 
-                case "OnlineOrdering":
-                    if (sortOrder.Equals(CurrentSort))
-                        products = _db.Products.OrderByDescending
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    else
-                        products = _db.Products.OrderBy
-                                (m => m.Name).ToPagedList(pageIndex, pageSize);
-                    break;
-                // Add sorting statements for other columns
+            //    case "OnlineOrdering":
+            //        if (sortOrder.Equals(CurrentSort))
+            //            products = _db.Products.OrderByDescending
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        else
+            //            products = _db.Products.OrderBy
+            //                    (m => m.Name).ToPagedList(pageIndex, pageSize);
+            //        break;
+            //    // Add sorting statements for other columns
 
-                case "Default":
-                    products = _db.Products.OrderBy
-                            (m => m.Id).ToPagedList(pageIndex, pageSize);
-                    break;
-            }
-            return View(products);
+            //    case "Default":
+            //        products = _db.Products.OrderBy
+            //                (m => m.Id).ToPagedList(pageIndex, pageSize);
+            //        break;
+            //}
+            return View(_db.Products.ToList());
 
             
             //return View();
