@@ -31,13 +31,13 @@
             @Html.ValidationMessageFor(model => model.Name)
         </div>
 
-        <div class="editor-label">
+        @*<div class="editor-label">
             @Html.LabelFor(model => model.TypeId)
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.TypeId)
             @Html.ValidationMessageFor(model => model.TypeId)
-        </div>
+        </div>*@
 
         <div class="editor-label">
             @Html.LabelFor(model => model.Description)
@@ -119,7 +119,7 @@
             @Html.ValidationMessageFor(model => model.Taxable)
         </div>
 
-        <div class="editor-label">
+        @*<div class="editor-label">
             @Html.LabelFor(model => model.ManageStock)
         </div>
         <div class="editor-field">
@@ -149,7 +149,7 @@
         <div class="editor-field">
             @Html.EditorFor(model => model.OnlineOrdering)
             @Html.ValidationMessageFor(model => model.OnlineOrdering)
-        </div>
+        </div>*@
 
         <div class="editor-label">
             @Html.LabelFor(model => model.ClientId)
@@ -158,7 +158,7 @@
             @Html.EditorFor(model => model.ClientId)
             @Html.ValidationMessageFor(model => model.ClientId)
         </div>
-
+       
         <p>
             <input type="submit" value="Create" />
         </p>
