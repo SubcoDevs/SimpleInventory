@@ -18,5 +18,11 @@ namespace InventoryManagement.Models
         public DbSet<Client> Clients { get; set; }
 
         public DbSet<Supplier> Suppliers { get; set; }
+
+        public DbSet<SubProduct> SubProducts { get; set; }
+
+        public DbSet<Order1> Order1 { get; set; }
+
+        
     }
 }

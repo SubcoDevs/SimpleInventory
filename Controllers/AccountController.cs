@@ -96,15 +96,24 @@ namespace InventoryManagement.Controllers
 
                 if (User.IsInRole("AdminWebSite") == true)
                 {
-                    // clientId = int(Request.Form["Id"]);
-                    clientId = 1;
+                    clientId = Convert.ToInt32(Request.Form["Id"]);
+                   // clientId = 1;
                 }
                 else
                 {
 
                     var username = User.Identity.Name;
                     var user = _db.UserProfiles.SingleOrDefault(u => u.UserName.ToLower() == username);
-                    clientId = user.ClientId;
+
+                    if (user == null)
+                    {
+                        clientId = Convert.ToInt32(Request.Form["Id"]);
+                    }
+                    else
+                    {
+                        clientId = user.ClientId;
+                    }
+                   
                 }
 
                 var YourRadioButton = Request.Form["radiobutton1"];

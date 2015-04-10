@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Index</h2>
+@using (Html.BeginForm("CheckDetail", "Order1"))
+{
+
+<fieldset>
+    <legend>Select Order Form</legend>
+    <ol>
+        <li>
+            @Html.Label("Supplier")
+            @Html.TextBox("Supplier")
+
+        </li>
+        <li>
+            @Html.Label("SubProduct")
+            @Html.TextBox("SubProduct")
+
+        </li>
+
+    </ol>
+
+ 
+    <input type="submit" value="CheckDetail" style='width:300px' />
+
+
+
+    @*@Html.ActionLink("Check Detail", "Check Detail")*@
+
+    @*@Html.ActionLink("Register", "Register") Check Detail
+    <input type="submit" value="CheckDetail" onclick="CheckDetail()" />*@
+
+
+</fieldset>
+}

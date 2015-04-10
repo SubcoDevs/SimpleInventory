@@ -6,6 +6,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using InventoryManagement.Models;
+using System.Web.Security;
+using DotNetOpenAuth.AspNet;
+using Microsoft.Web.WebPages.OAuth;
+using WebMatrix.WebData;
+using System.Transactions;
 
 namespace InventoryManagement.Controllers
 {
@@ -49,10 +54,23 @@ namespace InventoryManagement.Controllers
         public ActionResult Create(Client client)
         {
             if (ModelState.IsValid)
+
             {
                 db.Clients.Add(client);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+
+                
+
+                //var query = db.Clients.Select(c => new { c.ContactNumber, c.ClientName });
+                //var clientid = new SelectList(query.AsEnumerable(), "Id", "ClientName", 1);
+                //var usernametemp = String.Concat("Username-", clientid);
+                //var passwordtemp = "password";
+
+                //WebSecurity.CreateUserAndAccount(usernametemp, passwordtemp, new { ClientId = clientid });
+             //  // WebSecurity.Login(model.UserName, model.Password);
+
+               return RedirectToAction("Index");
+              
             }
 
             return View(client);
