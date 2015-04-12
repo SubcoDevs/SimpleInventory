@@ -1,5 +1,6 @@
 ﻿@model InventoryManagement.Models.SubProduct
 
+
 @{
     ViewBag.Title = "Create";
 }
@@ -170,4 +171,23 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+
+<script>
+    $(document).ready(function () {
+        if ($("#ProductId").val() != "--Select Products--") {
+
+
+            $("#ProductId").prop("disabled", true);
+
+        }
+
+        else {
+
+            $("#ProductId").prop("disabled", false);
+
+        }
+
+    });
+</script>
+
 }

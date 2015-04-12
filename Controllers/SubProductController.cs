@@ -1,11 +1,14 @@
-﻿using System;
+﻿using InventoryManagement.Models;
+using PagedList;
+using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using InventoryManagement.Models;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace InventoryManagement.Controllers
 {
@@ -17,7 +20,20 @@ namespace InventoryManagement.Controllers
         //
         // GET: /SubProduct/
 
+        int product_id = 0;
         public ActionResult Index()
+        {
+            product_id = Convert.ToInt32(TempData["product_id"]);
+            ViewBag.pro_id = product_id;
+            IPagedList<SubProduct> subproduct1 = null;
+            subproduct1 = db.SubProducts.OrderByDescending
+                               (m => m.Id).Where(m => m.ProductId == product_id).ToPagedList(1, 10);
+              
+            return View(subproduct1);
+           // return View(db.SubProducts.ToList());
+        }
+        [HttpPost]
+        public ActionResult Index(int id = 0)
         {
             return View(db.SubProducts.ToList());
         }
@@ -38,10 +54,17 @@ namespace InventoryManagement.Controllers
         //
         // GET: /SubProduct/Create
 
-        public ActionResult Create()
+        public ActionResult Create(int pro_id = 0)
         {
             var query = db.Products.Select(c => new { c.Id, c.Name });
-            ViewBag.Id = new SelectList(query.AsEnumerable(), "Id", "Name", 1);
+            if (pro_id == 0)
+            {
+                ViewBag.Id = new SelectList(query.AsEnumerable(), "Id", "Name", 0);
+            }
+            else
+            {
+                ViewBag.Id = new SelectList(query.AsEnumerable(), "Id", "Name", pro_id);
+            }
 
             var query1 = db.Suppliers.Select(c1 => new { c1.Id, c1.SupplierName });
             ViewBag.Id1 = new SelectList(query1.AsEnumerable(), "Id", "SupplierName", 1);

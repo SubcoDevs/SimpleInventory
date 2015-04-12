@@ -120,7 +120,7 @@ namespace InventoryManagement.Controllers
                 // Attempt to register the user
                 try
                 {
-                    WebSecurity.CreateUserAndAccount(model.UserName, model.Password, new { ClientId = model.ClientId});
+                    WebSecurity.CreateUserAndAccount(model.UserName, model.Password, new { ClientId = clientId });
                     WebSecurity.Login(model.UserName, model.Password);
 
                     if (YourRadioButton == "4")

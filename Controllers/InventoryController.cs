@@ -20,6 +20,8 @@ namespace InventoryManagement.Controllers
 
         ProductDb _db = new ProductDb();
 
+        
+
         public ActionResult Index(string sortOrder, string CurrentSort, int? page)
         {
 
@@ -41,6 +43,8 @@ namespace InventoryManagement.Controllers
             var username = User.Identity.Name;
             var user = _db.UserProfiles.SingleOrDefault(u => u.UserName.ToLower() == username);
             var clientId = user.ClientId;
+            TempData["clientId"] = clientId;
+
 
             switch (sortOrder)
             {
@@ -194,6 +198,7 @@ namespace InventoryManagement.Controllers
         {
             if (ModelState.IsValid)
             {
+                product.ClientId = Convert.ToInt32(TempData["clientId"]);
                 _db.Products.Add(product);
                 _db.SaveChanges();
                 return RedirectToAction("Index");
@@ -233,6 +238,15 @@ namespace InventoryManagement.Controllers
             }
             return View(product);
         }
+
+        [HttpGet]
+        public ActionResult GoToSubproduct(int id)
+        {
+            int i = 0;
+            TempData["product_id"] = id;
+            return RedirectToAction("Index", "SubProduct");
+        }
+
 
         [HttpGet]
         public ActionResult Delete(int Id)

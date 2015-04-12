@@ -8,6 +8,10 @@
 
 <h2>Product List</h2>
 
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
 @using (Html.BeginForm())
 {      
 <table>
@@ -70,8 +74,8 @@
 </th>
 <th style="border: 2px solid black; text-align: center;">
     <th style="border: 2px solid black; text-align: center;">
-    
-</th>
+    <th style="border: 2px solid black; text-align: center;">
+    </th>
 </tr>
 @foreach (var item in Model)
 {
@@ -124,6 +128,9 @@
         <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
         @Html.ActionLink("Delete", "Delete", new {id = item.Id})
     </td>
+        <td style="border: 2px solid black; text-align: center; word-wrap: break-word;">
+            @Html.ActionLink("GoToSubproduct", "GoToSubproduct", new { id = item.Id })
+        </td>
     </tr>
 }
 </table> 

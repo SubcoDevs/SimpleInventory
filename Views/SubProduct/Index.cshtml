@@ -1,70 +1,92 @@
-﻿@model IEnumerable<InventoryManagement.Models.SubProduct>
+﻿@*@model IEnumerable<InventoryManagement.Models.SubProduct>*@
+@model IPagedList<InventoryManagement.Models.SubProduct>
+
 
 @{
     ViewBag.Title = "Index";
 }
 
+
 <h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
+
+
+@using (Html.BeginForm())
+{
+    
+    <p>
+    @Html.ActionLink("Create New", "Create", new { pro_id = @ViewBag.pro_id })
 </p>
 <table>
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ProductId)
+            @Html.DisplayName("Product ID")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayName("Sub Product")
+           
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.TypeId)
+            @Html.DisplayName("TypeId")
+          
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Description)
+            @Html.DisplayName("Description")
+
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.SupplierId)
+            @Html.DisplayName("SupplierId")
+          
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Brand)
+            @Html.DisplayName("Brand")
+          
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Tags)
+            @Html.DisplayName("Tags")
+           
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.WholesalePrice)
+            @Html.DisplayName("WholesalePrice")
+          
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.RetailPrice)
+            @Html.DisplayName("RetailPrice")
+          
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.BuyPrice)
+            @Html.DisplayName("BuyPrice")
+          
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.InitialCostPrice)
+            @Html.DisplayName("InitialCostPrice")
+           
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Stock)
+            @Html.DisplayName("Stock")
+           
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Taxable)
+            @Html.DisplayName("Taxable")
+           
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ManageStock)
+            @Html.DisplayName("ManageStock")
+          
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.KeepSelling)
+            @Html.DisplayName("KeepSelling")
+          
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.PublishOnline)
+            @Html.DisplayName("PublishOnline")
+           
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.OnlineOrdering)
+            @Html.DisplayName("OnlineOrdering")
+          
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ClientId)
-        </th>
+       
         <th></th>
     </tr>
 
@@ -72,6 +94,7 @@
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.ProductId)
+           
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Name)
@@ -133,3 +156,7 @@
 }
 
 </table>
+    @*<div>
+        <input type="text" id="hiddenTab" name="hiddenTab" value=@ViewBag.pro_id />
+    </div>*@
+}
