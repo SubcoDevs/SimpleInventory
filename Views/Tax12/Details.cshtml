@@ -1,0 +1,43 @@
+﻿@model InventoryManagement.Models.Tax12
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Tax12</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TaxName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TaxName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TaxRate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TaxRate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Type)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Type)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.TaxId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

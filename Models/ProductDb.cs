@@ -23,6 +23,9 @@ namespace InventoryManagement.Models
 
         public DbSet<Order1> Order1 { get; set; }
 
+
+        public DbSet<Tax12> Tax12 { get; set; }
+
         
     }
 }

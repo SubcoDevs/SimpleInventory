@@ -208,3 +208,34 @@ C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\I
 C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.csproj.GenerateResource.Cache
 C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.dll
 C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.pdb
+D:\inventory_git_main\InventoryManagement_1\obj\Debug\InventoryManagement.csprojResolveAssemblyReference.cache
+D:\inventory_git_main\InventoryManagement_1\obj\Debug\InventoryManagement.Migrations.InitialCreate.resources
+D:\inventory_git_main\InventoryManagement_1\obj\Debug\InventoryManagement.csproj.GenerateResource.Cache
+D:\inventory_git_main\InventoryManagement_1\obj\Debug\InventoryManagement.dll
+D:\inventory_git_main\InventoryManagement_1\obj\Debug\InventoryManagement.pdb
+D:\inventory_git_main\InventoryManagement_1\bin\InventoryManagement.dll.config
+D:\inventory_git_main\InventoryManagement_1\bin\InventoryManagement.dll
+D:\inventory_git_main\InventoryManagement_1\bin\InventoryManagement.pdb
+D:\inventory_git_main\InventoryManagement_1\bin\PagedList.xml
+D:\inventory_git_main\InventoryManagement_1\bin\PagedList.Mvc.xml
+D:\inventory_git_main\InventoryManagement_1\bin\EntityFramework.xml
+D:\inventory_git_main\InventoryManagement_1\bin\Microsoft.Web.Infrastructure.xml
+D:\inventory_git_main\InventoryManagement_1\bin\System.Net.Http.Formatting.xml
+D:\inventory_git_main\InventoryManagement_1\bin\System.Web.Helpers.xml
+D:\inventory_git_main\InventoryManagement_1\bin\System.Web.Http.xml
+D:\inventory_git_main\InventoryManagement_1\bin\System.Web.Http.WebHost.xml
+D:\inventory_git_main\InventoryManagement_1\bin\System.Web.Mvc.xml
+D:\inventory_git_main\InventoryManagement_1\bin\System.Web.Razor.xml
+D:\inventory_git_main\InventoryManagement_1\bin\System.Web.WebPages.xml
+D:\inventory_git_main\InventoryManagement_1\bin\System.Web.WebPages.Deployment.xml
+D:\inventory_git_main\InventoryManagement_1\bin\System.Web.WebPages.Razor.xml
+D:\inventory_git_main\InventoryManagement_1\bin\WebMatrix.Data.xml
+D:\inventory_git_main\InventoryManagement_1\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\inventory_git_main\InventoryManagement_1\bin\WebMatrix.WebData.xml
+D:\inventory_git_main\InventoryManagement_1\bin\DotNetOpenAuth.AspNet.xml
+D:\inventory_git_main\InventoryManagement_1\bin\DotNetOpenAuth.Core.xml
+D:\inventory_git_main\InventoryManagement_1\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\inventory_git_main\InventoryManagement_1\bin\DotNetOpenAuth.OAuth.xml
+D:\inventory_git_main\InventoryManagement_1\bin\DotNetOpenAuth.OpenId.xml
+D:\inventory_git_main\InventoryManagement_1\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\inventory_git_main\InventoryManagement_1\bin\Newtonsoft.Json.xml
