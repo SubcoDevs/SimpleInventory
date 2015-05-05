@@ -161,29 +161,6 @@ D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\obj\D
 D:\shachi_work\New folder\InventoryManagement_1-master\InventoryManagement\obj\Debug\InventoryManagement.pdb
 C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\InventoryManagement.dll
 C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\InventoryManagement.pdb
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\Antlr3.Runtime.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.AspNet.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.Core.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OAuth.Consumer.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OAuth.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OpenId.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\EntityFramework.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\Microsoft.Web.Infrastructure.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\Microsoft.Web.WebPages.OAuth.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\Newtonsoft.Json.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\PagedList.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\PagedList.Mvc.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Helpers.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Mvc.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Optimization.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.Razor.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.Deployment.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\System.Web.WebPages.Razor.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\WebGrease.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\WebMatrix.Data.dll
-C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\WebMatrix.WebData.dll
 C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\PagedList.xml
 C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\PagedList.Mvc.xml
 C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\EntityFramework.xml
@@ -239,3 +216,4 @@ D:\inventory_git_main\InventoryManagement_1\bin\DotNetOpenAuth.OAuth.xml
 D:\inventory_git_main\InventoryManagement_1\bin\DotNetOpenAuth.OpenId.xml
 D:\inventory_git_main\InventoryManagement_1\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
 D:\inventory_git_main\InventoryManagement_1\bin\Newtonsoft.Json.xml
+C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\bin\Microsoft.Web.Infrastructure.xml
