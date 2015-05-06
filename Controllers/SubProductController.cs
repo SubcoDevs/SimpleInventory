@@ -29,8 +29,21 @@ namespace InventoryManagement.Controllers
             product_id = Convert.ToInt32(TempData["product_id"]);
             ViewBag.pro_id = product_id;
             IPagedList<SubProduct> subproduct1 = null;
-            subproduct1 = db.SubProducts.OrderByDescending
-                               (m => m.Id).Where(m => m.ProductId == product_id).ToPagedList(1, 10);
+            //subproduct1 = db.SubProducts.OrderByDescending
+            //                   (m => m.Id).Where(m => m.ProductId == product_id).ToPagedList(1, 10);
+
+            if (product_id == 0)
+            {
+                subproduct1 = db.SubProducts.OrderByDescending
+                                   (m => m.Id).ToPagedList(1, 10);
+            }
+            else
+            {
+                subproduct1 = db.SubProducts.OrderByDescending
+                                   (m => m.Id).Where(m => m.ProductId == product_id).ToPagedList(1, 10);
+            }
+
+
 
             //ProductDb context = new ProductDb();
             //var affectedRows = context.Database.ExecuteSqlCommand("Get_Subproduct_data @ProductId",

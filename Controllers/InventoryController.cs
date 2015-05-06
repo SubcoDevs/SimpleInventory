@@ -233,6 +233,7 @@ namespace InventoryManagement.Controllers
         {
             if (ModelState.IsValid)
             {
+                product.ClientId = Convert.ToInt32(TempData["clientId"]);
                 _db.Entry(product).State = EntityState.Modified;
                 _db.SaveChanges();
                 return RedirectToAction("Index");
