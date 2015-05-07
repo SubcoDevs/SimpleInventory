@@ -128,11 +128,11 @@ namespace InventoryManagement.Controllers
                         Roles.AddUserToRole(model.UserName, "Write");
 
                     }
-                    else if (YourRadioButton == "3")
-                    {
-                        Roles.AddUserToRole(model.UserName, "Read");
+                    //else if (YourRadioButton == "3")
+                    //{
+                    //    Roles.AddUserToRole(model.UserName, "Read");
 
-                    }
+                    //}
                     else if (YourRadioButton == "2")
                     {
                         Roles.AddUserToRole(model.UserName, "Admin");
