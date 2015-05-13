@@ -182,7 +182,7 @@ namespace InventoryManagement.Controllers
             //                (m => m.Id).ToPagedList(pageIndex, pageSize);
             //        break;
             //}
-            return View(_db.Products.ToList());
+            return View(_db.Products.ToList().Where(m=> m.IsDeleted != true));
 
             
             //return View();

@@ -24,7 +24,10 @@ namespace InventoryManagement.Models
         public Boolean KeepSelling { get; set; }
         public Boolean PublishOnline { get; set; }
         public Boolean OnlineOrdering { get; set; }
+        public Boolean IsDeleted { get; set; }
         public int ClientId { get; set; }
+        public int Number { get; set; }
+        public int KnownAs { get; set; }
         
     }
 }

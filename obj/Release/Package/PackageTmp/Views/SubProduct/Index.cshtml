@@ -1,0 +1,143 @@
+﻿@*@model IEnumerable<InventoryManagement.Models.SubProduct>*@
+@model IPagedList<InventoryManagement.Models.SubProduct>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@section Scripts {
+
+    @Styles.Render("~/Content/themes/base/css")
+    @Scripts.Render("~/bundles/table")
+
+    <script>
+        $(document).ready(function () {
+            $('#table_id1').dataTable();
+        });
+    </script>
+
+}
+
+<h2>Index</h2>
+
+
+
+
+    
+    <p>
+    @Html.ActionLink("Create New", "Create", new { pro_id = @ViewBag.pro_id })
+</p>
+<table id="table_id1">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayName("Product ID")
+            </th>
+            <th>
+                @Html.DisplayName("Sub Product")
+
+            </th>
+            <th>
+                @Html.DisplayName("Type ID")
+
+            </th>
+            <th>
+                @Html.DisplayName("Description")
+
+            </th>
+            <th>
+                @Html.DisplayName("Supplier ID")
+
+            </th>
+            <th>
+                @Html.DisplayName("Brand")
+
+            </th>
+            <th>
+                @Html.DisplayName("Tags")
+
+            </th>
+            <th>
+                @Html.DisplayName("Wholesale Price")
+
+            </th>
+            <th>
+                @Html.DisplayName("Retail Price")
+
+            </th>
+            <th>
+                @Html.DisplayName("Buy Price")
+
+            </th>
+            <th>
+                @Html.DisplayName("Initial Cost Price")
+
+            </th>
+            <th>
+                @Html.DisplayName("Stock")
+
+            </th>
+         
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductId)
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TypeId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SupplierId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Brand)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tags)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WholesalePrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RetailPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BuyPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InitialCostPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Stock)
+                </td>
+               
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.ClientId)
+                </td>*@
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+        </tbody>
+</table>
+    @*<div>
+        <input type="text" id="hiddenTab" name="hiddenTab" value=@ViewBag.pro_id />
+    </div>*@

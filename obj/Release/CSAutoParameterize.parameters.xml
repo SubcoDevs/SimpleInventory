@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="server=inventorydb.cgpm45aotwss.ap-southeast-1.rds.amazonaws.com,1433;database=InventoryManagementDB;uid=inventorymaster;password=$inventory123" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Rohit\\iOS\\Inventory\ Management\\Code\\01_04_2015\\InventoryManagement_1-master\\InventoryManagement\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

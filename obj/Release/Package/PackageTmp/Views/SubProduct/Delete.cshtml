@@ -1,0 +1,145 @@
+﻿@model InventoryManagement.Models.SubProduct
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>SubProduct</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ProductId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProductId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TypeId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TypeId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SupplierId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SupplierId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Brand)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Brand)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Tags)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Tags)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.WholesalePrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.WholesalePrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RetailPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RetailPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BuyPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BuyPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.InitialCostPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.InitialCostPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Stock)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Stock)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Taxable)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Taxable)
+    </div>
+
+    @*<div class="display-label">
+         @Html.DisplayNameFor(model => model.ManageStock)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ManageStock)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.KeepSelling)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.KeepSelling)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PublishOnline)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PublishOnline)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OnlineOrdering)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OnlineOrdering)
+    </div>*@
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ClientId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ClientId)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

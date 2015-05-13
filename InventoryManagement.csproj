@@ -312,6 +312,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="bin\InventoryManagement.dll.config" />
+    <None Include="Properties\PublishProfiles\Inventory Profile.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />

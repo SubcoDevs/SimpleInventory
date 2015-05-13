@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\obj\Release\Package\PackageTmp" />
+  <setAcl path="C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Rohit\iOS\Inventory Management\Code\01_04_2015\InventoryManagement_1-master\InventoryManagement\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>
