@@ -14,140 +14,189 @@
 
         @Html.HiddenFor(model => model.Id)
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Name)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Name)
-            @Html.ValidationMessageFor(model => model.Name)
+        <div>
+            <div>
+                <input type="button" id="btnDetails" value="+ Details" onclick="onclickDetails()" />
+            </div>
+            <div class="toggle1" id="divDetails">
+                <div>
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.SaleableItem)
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.SaleableItem)
+                        @Html.ValidationMessageFor(model => model.SaleableItem)
+                    </div>
+                </div>
+                <div>
+                    <div style="float:left;">
+                        <div class="editor-label" style="">
+                            @Html.LabelFor(model => model.Name)
+                                  
+                            @Html.EditorFor(model => model.Name)
+                            @Html.ValidationMessageFor(model => model.Name)&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                    <div style="">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Description)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Description)
+                            @Html.ValidationMessageFor(model => model.Description)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="float:left;">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Number)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Number)
+                            @Html.ValidationMessageFor(model => model.Number)&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                    <div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.KnownAs)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.KnownAs)
+                            @Html.ValidationMessageFor(model => model.KnownAs)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="float:left;">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Brand)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Brand)
+                            @Html.ValidationMessageFor(model => model.Brand)&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                    <div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Tags)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Tags)
+                            @Html.ValidationMessageFor(model => model.Tags)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Stock)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Stock)
+                            @Html.ValidationMessageFor(model => model.Stock)&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.TypeId)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.TypeId)
-            @Html.ValidationMessageFor(model => model.TypeId)
+        <div>
+            <div>
+                <input type="button" id="btnImages" value="+ Images" onclick="onclickImages()" />
+            </div>
+
+            <div class="toggle1" id="divImages">
+                Images----------
+            </div>
         </div>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Description)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Description)
-            @Html.ValidationMessageFor(model => model.Description)
+        <div>
+            <div>
+                <input type="button" id="btnItemLocations" value="+ Item locations" onclick="onclickItemLocations()" />
+            </div>
+
+            <div class="toggle1" id="divItemLocations">
+                Item locations----------
+            </div>
         </div>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.SupplierId)
+        <div>
+            <div>
+                <input type="button" id="btnPricing" value="+ Pricing & Taxes" onclick="onclickPricing()" />
+            </div>
+            <div class="toggle1" id="divPricing">
+                <div>
+                    <div style="float:left;">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.WholesalePrice)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.WholesalePrice)
+                            @Html.ValidationMessageFor(model => model.WholesalePrice)&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                    <div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.RetailPrice)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.RetailPrice)
+                            @Html.ValidationMessageFor(model => model.RetailPrice)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="float:left;">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.BuyPrice)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.BuyPrice)
+                            @Html.ValidationMessageFor(model => model.BuyPrice)&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                    <div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.InitialCostPrice)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.InitialCostPrice)
+                            @Html.ValidationMessageFor(model => model.InitialCostPrice)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.Taxable)
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.Taxable)
+                        @Html.ValidationMessageFor(model => model.Taxable)
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.SupplierId)
-            @Html.ValidationMessageFor(model => model.SupplierId)
-        </div>
+        
+        <div>
+            <div>
+                <input type="button" id="btnHistory" value="+ History" onclick="onclickHistory()" />
+            </div>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Brand)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Brand)
-            @Html.ValidationMessageFor(model => model.Brand)
-        </div>
+            <div class="toggle1" id="divHistory">
+                History----------
+            </div>
+         </div>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Tags)
+        <div>
+            <div>
+                <input type="button" id="btnItemRelationship" value="+ Item Relationship" onclick="onclickItemRelationship()" />
+            </div>
+            <div class="toggle1" id="divItemRelationship">
+                Item Relationship----------
+            </div>
         </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Tags)
-            @Html.ValidationMessageFor(model => model.Tags)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.WholesalePrice)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.WholesalePrice)
-            @Html.ValidationMessageFor(model => model.WholesalePrice)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.RetailPrice)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.RetailPrice)
-            @Html.ValidationMessageFor(model => model.RetailPrice)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.BuyPrice)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.BuyPrice)
-            @Html.ValidationMessageFor(model => model.BuyPrice)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.InitialCostPrice)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.InitialCostPrice)
-            @Html.ValidationMessageFor(model => model.InitialCostPrice)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Stock)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Stock)
-            @Html.ValidationMessageFor(model => model.Stock)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Taxable)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Taxable)
-            @Html.ValidationMessageFor(model => model.Taxable)
-        </div>
-        <div class="editor-label">
-            @Html.LabelFor(model => model.IsDeleted)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.IsDeleted)
-            @Html.ValidationMessageFor(model => model.IsDeleted)
-        </div>
-
-        @*<div class="editor-label">
-            @Html.LabelFor(model => model.ManageStock)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.ManageStock)
-            @Html.ValidationMessageFor(model => model.ManageStock)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.KeepSelling)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.KeepSelling)
-            @Html.ValidationMessageFor(model => model.KeepSelling)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.PublishOnline)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.PublishOnline)
-            @Html.ValidationMessageFor(model => model.PublishOnline)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.OnlineOrdering)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.OnlineOrdering)
-            @Html.ValidationMessageFor(model => model.OnlineOrdering)
-        </div>*@
 
         <p>
             <input type="submit" value="Save" />
@@ -161,4 +210,98 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+    
+
+<script>
+    function onclickDetails() {
+
+        if (document.getElementById("btnDetails").value == "+ Details") {
+
+            document.getElementById("divDetails").style.display = 'block';
+            document.getElementById("btnDetails").value = "- Details";
+
+        }
+        else {
+
+            document.getElementById("divDetails").style.display = 'none';
+            document.getElementById("btnDetails").value = "+ Details";
+        }
+    }
+
+    function onclickItemRelationship() {
+
+        if (document.getElementById("btnItemRelationship").value == "+ Item Relationship") {
+
+            document.getElementById("divItemRelationship").style.display = 'block';
+            document.getElementById("btnItemRelationship").value = "- Item Relationship";
+
+        }
+        else {
+
+            document.getElementById("divItemRelationship").style.display = 'none';
+            document.getElementById("btnItemRelationship").value = "+ Item Relationship";
+        }
+    }
+
+    function onclickImages() {
+
+        if (document.getElementById("btnImages").value == "+ Images") {
+
+            document.getElementById("divImages").style.display = 'block';
+            document.getElementById("btnImages").value = "- Images";
+
+        }
+        else {
+
+            document.getElementById("divImages").style.display = 'none';
+            document.getElementById("btnImages").value = "+ Images";
+        }
+    }
+
+    function onclickItemLocations() {
+
+        if (document.getElementById("btnItemLocations").value == "+ Item locations") {
+
+            document.getElementById("divItemLocations").style.display = 'block';
+            document.getElementById("btnItemLocations").value = "- Item locations";
+
+        }
+        else {
+
+            document.getElementById("divItemLocations").style.display = 'none';
+            document.getElementById("btnItemLocations").value = "+ Item locations";
+        }
+    }
+
+    function onclickPricing() {
+
+        if (document.getElementById("btnPricing").value == "+ Pricing & Taxes") {
+
+            document.getElementById("divPricing").style.display = 'block';
+            document.getElementById("btnPricing").value = "- Pricing & Taxes";
+
+        }
+        else {
+
+            document.getElementById("divPricing").style.display = 'none';
+            document.getElementById("btnPricing").value = "+ Pricing & Taxes";
+        }
+    }
+
+    function onclickHistory() {
+
+        if (document.getElementById("btnHistory").value == "+ History") {
+
+            document.getElementById("divHistory").style.display = 'block';
+            document.getElementById("btnHistory").value = "- History";
+
+        }
+        else {
+
+            document.getElementById("divHistory").style.display = 'none';
+            document.getElementById("btnHistory").value = "+ History";
+        }
+    }
+</script>
+
 }

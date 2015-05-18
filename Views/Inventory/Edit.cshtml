@@ -14,400 +14,193 @@
 
         @Html.HiddenFor(model => model.Id)
 
-        <table style="border:hidden">
-            <tr style="border:hidden;">
-                <td class="column1">
-                    @Html.LabelFor(model => model.Name)  
-                </td>
-                <td class="column2">
-                    @Html.EditorFor(model => model.Name)
-                    @Html.ValidationMessageFor(model => model.Name)
-                </td>
-                <td class="column3">
-                    @Html.LabelFor(model => model.TypeId)
-                </td>
-                <td class="column4">
-                    @Html.EditorFor(model => model.TypeId)
-                    @Html.ValidationMessageFor(model => model.TypeId)
-                </td>
-            </tr>
-            <tr style="border:hidden;">
-                <td class="column1">
-                    @Html.LabelFor(model => model.Description)                   
-
-                </td>
-                <td class="column2">
-                    @Html.EditorFor(model => model.Description)
-                    @Html.ValidationMessageFor(model => model.Description)
-                </td>
-                <td class="column3">
-                    @Html.LabelFor(model => model.SupplierId)
-
-                   
-                </td>
-                <td class="column4">
-                    @Html.EditorFor(model => model.SupplierId)
-                    @Html.ValidationMessageFor(model => model.SupplierId)
-                </td>
-            </tr>
-            <tr style="border:hidden;">
-                <td class="column1">
-                    @Html.LabelFor(model => model.Brand)
-
-                </td>
-                <td class="column2">
-                    @Html.EditorFor(model => model.Brand)
-                    @Html.ValidationMessageFor(model => model.Brand)
-                </td>
-                <td class="column3">
-                    @Html.LabelFor(model => model.Tags)                 
-                </td>
-                <td class="column4">
-                    @Html.EditorFor(model => model.Tags)
-                    @Html.ValidationMessageFor(model => model.Tags)
-                </td>
-            </tr>
-            <tr style="border:hidden;">
-                <td class="column1">
-                    @Html.LabelFor(model => model.WholesalePrice)
-                 
-                </td>
-                <td class="column2">
-                    @Html.EditorFor(model => model.WholesalePrice)
-                    @Html.ValidationMessageFor(model => model.WholesalePrice)
-                </td>
-                <td class="column3">
-                    @Html.LabelFor(model => model.RetailPrice)                  
-                </td>
-                <td class="column4">
-                    @Html.EditorFor(model => model.RetailPrice)
-                    @Html.ValidationMessageFor(model => model.RetailPrice)
-                </td>
-            </tr>
-            <tr style="border:hidden;">
-                <td class="column1">
-                    @Html.LabelFor(model => model.BuyPrice)
-
-                </td>
-                <td class="column2">
-                    @Html.EditorFor(model => model.BuyPrice)
-                    @Html.ValidationMessageFor(model => model.BuyPrice)
-                </td>
-                <td class="column3">
-                    @Html.LabelFor(model => model.InitialCostPrice)
-                 
-                </td>
-                <td class="column4">
-                    @Html.EditorFor(model => model.InitialCostPrice)
-                    @Html.ValidationMessageFor(model => model.InitialCostPrice)
-                </td>
-            </tr>
-            <tr style="border:hidden;">
-                <td class="column1">
-                    @Html.LabelFor(model => model.Stock)
-
-                </td>
-                <td class="column2">
-                    @Html.EditorFor(model => model.Stock)
-                    @Html.ValidationMessageFor(model => model.Stock)
-                </td>
-                <td class="column3">                                  
-                </td>
-                <td class="column4">                  
-                </td>
-            </tr>
-            <tr style="border:hidden;">
-                <td class="column1">
-                    @Html.LabelFor(model => model.Taxable)
-                </td>
-                <td class="column2">
-                    @Html.EditorFor(model => model.Taxable)
-                    @Html.ValidationMessageFor(model => model.Taxable)
-                </td>
-                <td class="column3"></td>
-                <td class="column4"></td>
-            </tr>
-            <tr style="border:hidden;">
-                <td class="column1">
-                    @Html.LabelFor(model => model.IsDeleted)
-
-                </td>
-                <td class="column2">
-                    @Html.EditorFor(model => model.IsDeleted)
-                    @Html.ValidationMessageFor(model => model.IsDeleted)
-                </td>
-                <td class="column3">
-                   
-                </td>
-                <td class="column4">
-                   
-                </td>
-            </tr>
-        </table>
-
-      
-
-    
-        @*<div class="editor-label">
-                @Html.LabelFor(model => model.ManageStock)
-            </div>
-            <div class="editor-field">
-                @Html.EditorFor(model => model.ManageStock)
-                @Html.ValidationMessageFor(model => model.ManageStock)
-            </div>
-
-            <div class="editor-label">
-                @Html.LabelFor(model => model.KeepSelling)
-            </div>
-            <div class="editor-field">
-                @Html.EditorFor(model => model.KeepSelling)
-                @Html.ValidationMessageFor(model => model.KeepSelling)
-            </div>
-
-            <div class="editor-label">
-                @Html.LabelFor(model => model.PublishOnline)
-            </div>
-            <div class="editor-field">
-                @Html.EditorFor(model => model.PublishOnline)
-                @Html.ValidationMessageFor(model => model.PublishOnline)
-            </div>
-
-            <div class="editor-label">
-                @Html.LabelFor(model => model.OnlineOrdering)
-            </div>
-            <div class="editor-field">
-                @Html.EditorFor(model => model.OnlineOrdering)
-                @Html.ValidationMessageFor(model => model.OnlineOrdering)
-            </div>*@
-
-
         <div>
-            <input type="button" id="button1" value="+ Details" onclick="onclickbutton1()" />
-        </div>
-
-        <div class="toggle1" id="div1">
-            <table style="border:hidden">
-                        <tr style="border:hidden;">
-                                    <td class="column1">
-                                             @Html.Label("SubProductName")
-                                    </td>
-                                    <td class="column2">
-                                             @Html.TextBox("Sub_Product")
-                                    </td>
-                                    <td class="column3">
-                                             @Html.Label("SupplierCode")
-                                    </td>
-                                    <td class="column4">
-                                             @Html.TextBox("Supplier_code")
-                                    </td>
-                        </tr>
-                        <tr style="border:hidden;">
-                                    <td class="column1">
-                                             @Html.Label("Size")
-                                    </td>
-                                    <td class="column2">
-                                             @Html.TextBox("Size")
-                                    </td>
-                                    <td class="column3">
-                                             @Html.Label("Weight")
-                                    </td>
-                                    <td class="column4">
-                                             @Html.TextBox("Weight")
-                                    </td>
-                        </tr>
-                        <tr style="border:hidden;">
-                                    <td class="column1">
-                                             @Html.Label("Initial Price")
-                                    </td>
-                                    <td class="column2">
-                                             @Html.TextBox("Initial_Price")
-                                    </td>
-                                    <td class="column3">
-                                             @Html.Label("Retail Price")
-                                    </td>
-                                    <td class="column4">
-                                             @Html.TextBox("Retail_Price")
-                                    </td>
-                        </tr>
-                        <tr style="border:hidden;">
-                                    <td class="column1">
-                                            @Html.Label("Wholesale Price")
-                                    </td>
-                                    <td class="column2">
-                                            @Html.TextBox("Wholesale_Price")
-                                    </td>
-                                    <td class="column3">
-                                           
-                                    </td>
-                                    <td class="column4">
-                                           
-                                    </td>
-                        </tr>
-                        <tr style="border:hidden;">
-                                    <td class="column1">
-                                            @Html.Label("Inital Stock")
-                                    </td>
-                                    <td class="column2">
-                                            @Html.TextBox("Inital_Stock")
-                                    </td>
-                                    <td class="column3">
-                                            @Html.Label("Inital Cost")
-                                    </td>
-                                    <td class="column4">
-                                            @Html.TextBox("Inital_Cost")
-                                    </td>
-                        </tr>
-                </table>
-</div>
-
-        <div>
-            <input type="button" id="button2" value="+ Item Relationship" onclick="onclickbutton2()" />
-        </div>
-
-        <div class="toggle1" id="div2">
-            <table  style="width:600px; height:200px; border:2px;">
-                <tr>
-                    <td class="column5">
-                        @Html.Label("Item Number")
-                    </td>
-                    <td class="column5">
-                        @Html.Label("Item Name")
-                    </td>
-                    <td class="column5">
-                        @Html.Label("Qty")
-                    </td>
-                    <td class="column5">
-                        @Html.Label("Unit")
-                    </td>
-                    <td class="column5">
-                        @Html.Label("Unit Price")
-                    </td>
-                    <td class="column5">
-                        @Html.Label("Cost ")
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="column6">
-                        @Html.Label("123")
-                    </td>
-                    <td class="column6">
-                        @Html.Label("Sugar")
-                    </td>
-                    <td class="column6">
-                        @Html.Label("1000")
-                    </td>
-                    <td class="column6">
-                        @Html.Label("Gram")
-                    </td>
-                    <td class="column6">
-                        @Html.Label("100 Rs Per Kg")
-                    </td>
-                    <td class="column6">
-                        @Html.Label("100")
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="column6">
-                        @Html.Label("456")
-                    </td>
-                    <td class="column6">
-                        @Html.Label("Milk")
-                    </td>
-                    <td class="column6">
-                        @Html.Label("0.5")
-                    </td>
-                    <td class="column6">
-                        @Html.Label("Litre")
-                    </td>
-                    <td class="column6">
-                        @Html.Label("50 Rs. Per Litre")
-                    </td>
-                    <td class="column6">
-                        @Html.Label("25")
-                    </td>
-                </tr>
-            </table>
-            <div style="height:20px;">
+            <div>
+                <input type="button" id="btnDetails" value="+ Details" onclick="onclickDetails()" />
+            </div>
+            <div class="toggle1" id="divDetails">
+                <div>
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.SaleableItem)
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.SaleableItem)
+                        @Html.ValidationMessageFor(model => model.SaleableItem)
+                    </div>
+                </div>
+                <div>
+                    <div style="float:left;">
+                        <div class="editor-label" style="">
+                            @Html.LabelFor(model => model.Name)
+                                  
+                            @Html.EditorFor(model => model.Name)
+                            @Html.ValidationMessageFor(model => model.Name)&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                    <div style="">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Description)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Description)
+                            @Html.ValidationMessageFor(model => model.Description)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="float:left;">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Number)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Number)
+                            @Html.ValidationMessageFor(model => model.Number)&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                    <div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.KnownAs)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.KnownAs)
+                            @Html.ValidationMessageFor(model => model.KnownAs)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="float:left;">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Brand)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Brand)
+                            @Html.ValidationMessageFor(model => model.Brand)&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                    <div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Tags)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Tags)
+                            @Html.ValidationMessageFor(model => model.Tags)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Stock)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Stock)
+                            @Html.ValidationMessageFor(model => model.Stock)&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                </div>
 
             </div>
-            <table style="width:600px; border:solid; border-color:aliceblue;">
-                <tr >
-                    <td>
-                        @Html.Label("Buy Price")
-                    </td>
-                    <td>
-                        @Html.Label("125 Rs per Cup")
-                    </td>
-                </tr>
-            </table>
-            <div style="height:20px;">
-
-            </div>
-
-
         </div>
 
         <div>
-            <input type="button" id="button3" value="+ Images" onclick="onclickbutton3()" />
-        </div>
+            <div>
+                <input type="button" id="btnImages" value="+ Images" onclick="onclickImages()" />
+            </div>
 
-        <div class="toggle1" id="div3">
-            <table>
-                <tr>
-                    <td>
-                        Images----------
-                    </td>
-                </tr>
-            </table>
+            <div class="toggle1" id="divImages">
+                Images----------
+            </div>
         </div>
 
         <div>
-            <input type="button" id="button4" value="+ Item locations" onclick="onclickbutton4()" />
-        </div>
+            <div>
+                <input type="button" id="btnItemLocations" value="+ Item locations" onclick="onclickItemLocations()" />
+            </div>
 
-        <div class="toggle1" id="div4">
-            <table>
-                <tr>
-                    <td>
-                        Item locations----------
-                    </td>
-                </tr>
-            </table>
+            <div class="toggle1" id="divItemLocations">
+                Item locations----------
+            </div>
         </div>
 
         <div>
-            <input type="button" id="button5" value="+ Pricing and Taxes" onclick="onclickbutton5()" />
+            <div>
+                <input type="button" id="btnPricing" value="+ Pricing & Taxes" onclick="onclickPricing()" />
+            </div>
+            <div class="toggle1" id="divPricing">
+                <div>
+                    <div style="float:left;">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.WholesalePrice)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.WholesalePrice)
+                            @Html.ValidationMessageFor(model => model.WholesalePrice)&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                    <div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.RetailPrice)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.RetailPrice)
+                            @Html.ValidationMessageFor(model => model.RetailPrice)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="float:left;">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.BuyPrice)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.BuyPrice)
+                            @Html.ValidationMessageFor(model => model.BuyPrice)&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                    <div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.InitialCostPrice)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.InitialCostPrice)
+                            @Html.ValidationMessageFor(model => model.InitialCostPrice)
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.Taxable)
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.Taxable)
+                        @Html.ValidationMessageFor(model => model.Taxable)
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        <div>
+            <div>
+                <input type="button" id="btnHistory" value="+ History" onclick="onclickHistory()" />
+            </div>
 
-        <div class="toggle1" id="div5">
-            <table>
-                <tr>
-                    <td>
-                        Pricing and Taxes----------
-                    </td>
-                </tr>
-            </table>
-        </div>
+            <div class="toggle1" id="divHistory">
+                History----------
+            </div>
+         </div>
 
         <div>
-            <input type="button" id="button6" value="+ History" onclick="onclickbutton6()" />
+            <div>
+                <input type="button" id="btnItemRelationship" value="+ Item Relationship" onclick="onclickItemRelationship()" />
+            </div>
+            <div class="toggle1" id="divItemRelationship">
+                Item Relationship----------
+            </div>
         </div>
 
-        <div class="toggle1" id="div6">
-            <table>
-                <tr>
-                    <td>
-                        History----------
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-                        <p>
-                            <input type="submit" value="Save" />
-                        </p>
+        <p>
+            <input type="submit" value="Save" />
+        </p>
     </fieldset>
 }
 
@@ -420,105 +213,93 @@
     
 
 <script>
-    function onclickbutton1() {
+    function onclickDetails() {
 
-        if (document.getElementById("button1").value == "+ Details")
-        {
+        if (document.getElementById("btnDetails").value == "+ Details") {
 
-            document.getElementById("div1").style.display = 'block';
-            document.getElementById("button1").value = "- Details";
+            document.getElementById("divDetails").style.display = 'block';
+            document.getElementById("btnDetails").value = "- Details";
 
         }
-        else
-        {
+        else {
 
-            document.getElementById("div1").style.display = 'none';
-            document.getElementById("button1").value = "+ Details";
+            document.getElementById("divDetails").style.display = 'none';
+            document.getElementById("btnDetails").value = "+ Details";
         }
     }
 
-    function onclickbutton2() {
+    function onclickItemRelationship() {
 
-        if (document.getElementById("button2").value == "+ Item Relationship")
-        {
+        if (document.getElementById("btnItemRelationship").value == "+ Item Relationship") {
 
-            document.getElementById("div2").style.display = 'block';
-            document.getElementById("button2").value = "- Item Relationship";
+            document.getElementById("divItemRelationship").style.display = 'block';
+            document.getElementById("btnItemRelationship").value = "- Item Relationship";
 
         }
-        else
-        {
+        else {
 
-            document.getElementById("div2").style.display = 'none';
-            document.getElementById("button2").value = "+ Item Relationship";
+            document.getElementById("divItemRelationship").style.display = 'none';
+            document.getElementById("btnItemRelationship").value = "+ Item Relationship";
         }
     }
 
-    function onclickbutton3() {
+    function onclickImages() {
 
-        if (document.getElementById("button3").value == "+ Images")
-        {
+        if (document.getElementById("btnImages").value == "+ Images") {
 
-            document.getElementById("div3").style.display = 'block';
-            document.getElementById("button3").value = "- Images";
+            document.getElementById("divImages").style.display = 'block';
+            document.getElementById("btnImages").value = "- Images";
 
         }
-        else
-        {
+        else {
 
-            document.getElementById("div3").style.display = 'none';
-            document.getElementById("button3").value = "+ Images";
+            document.getElementById("divImages").style.display = 'none';
+            document.getElementById("btnImages").value = "+ Images";
         }
     }
 
-    function onclickbutton4() {
+    function onclickItemLocations() {
 
-        if (document.getElementById("button4").value == "+ Item locations")
-        {
+        if (document.getElementById("btnItemLocations").value == "+ Item locations") {
 
-            document.getElementById("div4").style.display = 'block';
-            document.getElementById("button4").value = "- Item locations";
+            document.getElementById("divItemLocations").style.display = 'block';
+            document.getElementById("btnItemLocations").value = "- Item locations";
 
         }
-        else
-        {
+        else {
 
-            document.getElementById("div4").style.display = 'none';
-            document.getElementById("button4").value = "+ Item locations";
+            document.getElementById("divItemLocations").style.display = 'none';
+            document.getElementById("btnItemLocations").value = "+ Item locations";
         }
     }
 
-    function onclickbutton5() {
+    function onclickPricing() {
 
-        if (document.getElementById("button5").value == "+ Pricing and Taxes")
-        {
+        if (document.getElementById("btnPricing").value == "+ Pricing & Taxes") {
 
-            document.getElementById("div5").style.display = 'block';
-            document.getElementById("button5").value = "- Pricing and Taxes";
+            document.getElementById("divPricing").style.display = 'block';
+            document.getElementById("btnPricing").value = "- Pricing & Taxes";
 
         }
-        else
-        {
+        else {
 
-            document.getElementById("div5").style.display = 'none';
-            document.getElementById("button5").value = "+ Pricing and Taxes";
+            document.getElementById("divPricing").style.display = 'none';
+            document.getElementById("btnPricing").value = "+ Pricing & Taxes";
         }
     }
 
-    function onclickbutton6() {
+    function onclickHistory() {
 
-        if (document.getElementById("button6").value == "+ History")
-        {
+        if (document.getElementById("btnHistory").value == "+ History") {
 
-            document.getElementById("div6").style.display = 'block';
-            document.getElementById("button6").value = "- History";
+            document.getElementById("divHistory").style.display = 'block';
+            document.getElementById("btnHistory").value = "- History";
 
         }
-        else
-        {
+        else {
 
-            document.getElementById("div6").style.display = 'none';
-            document.getElementById("button6").value = "+ History";
+            document.getElementById("divHistory").style.display = 'none';
+            document.getElementById("btnHistory").value = "+ History";
         }
     }
 </script>

@@ -1,4 +1,43 @@
-﻿html {
+﻿
+
+.column1 {
+      border:hidden;
+      width:25%;
+      text-align:left;
+}
+
+.column2 {
+      border:hidden;
+      width:35%;
+}
+.column3 {
+      border:hidden;
+      width:25%;
+       text-align:left;
+}
+.column4 {
+      border:hidden;
+      width:35%;
+}
+
+.column5 {
+      
+      text-align:left;
+     
+}
+
+.column6 {
+      
+     text-align:left;
+}
+
+.toggle1 {
+   
+    display:none;
+
+}
+
+html {
     background-color: #e2e2e2;
     margin: 0;
     padding: 0;

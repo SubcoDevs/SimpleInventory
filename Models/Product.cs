@@ -28,6 +28,6 @@ namespace InventoryManagement.Models
         public int ClientId { get; set; }
         public int Number { get; set; }
         public int KnownAs { get; set; }
-        
+        public Boolean SaleableItem { get; set; }
     }
 }

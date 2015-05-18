@@ -182,7 +182,8 @@ namespace InventoryManagement.Controllers
             //                (m => m.Id).ToPagedList(pageIndex, pageSize);
             //        break;
             //}
-            return View(_db.Products.ToList().Where(m=> m.IsDeleted != true));
+            //return View(_db.Products.ToList().Where(m=> m.IsDeleted != true).Where(m => m.SaleableItem == true));
+            return View(_db.Products.ToList().Where(m => m.IsDeleted != true));
 
             
             //return View();
@@ -240,6 +241,64 @@ namespace InventoryManagement.Controllers
             }
             return View(product);
         }
+
+        //[HttpGet]
+        //public ActionResult Relationship(int Id)
+        //{
+        //    //var model = _db.ItemRelationships.Find(Id);
+        //    //ViewBag.ItemId = Id;
+        //    TempData["ItemId"] = Id;
+        //    var model = _db.ItemRelationships.ToList().Where(m => m.ItemId == Id);
+
+        //    return View(model);
+        //    //return View();
+        //}
+
+        //[HttpPost]
+        //public ActionResult Relationship(Product product)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        product.ClientId = Convert.ToInt32(TempData["clientId"]);
+        //        _db.Entry(product).State = EntityState.Modified;
+        //        _db.SaveChanges();
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View(product);
+        //}
+
+        [HttpGet]
+        public ActionResult AddNewRelationship()
+        {
+            //var model = _db.ItemRelationships.Find(Id);
+            //ViewBag.ItemId = Id;
+            //var model = _db.ItemRelationships.ToList().Where(m => m.ItemId == Id);
+            //ViewBag.ItemId = Id;
+            //return View(model);
+
+            List<SelectListItem> li = new List<SelectListItem>();
+            li.Add(new SelectListItem { Text = "Select", Value = "0" });
+            li.Add(new SelectListItem { Text = "Cloth", Value = "9" });
+            li.Add(new SelectListItem { Text = "Zip", Value = "10" });
+            
+            ViewData["SubItem"] = li;
+            return View();
+        }
+
+        //[HttpPost]
+        //public ActionResult AddNewRelationship(ItemRelationship itemRelationship)
+        //{
+
+        //    if (ModelState.IsValid)
+        //    {
+        //        itemRelationship.ItemId = Convert.ToInt32(TempData["ItemId"]);
+        //        _db.ItemRelationships.Add(itemRelationship);
+        //        _db.SaveChanges();
+        //        //return RedirectToAction("Relationship", itemRelationship.ItemId);
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View(itemRelationship);
+        //}
 
         [HttpGet]
         public ActionResult GoToSubproduct(int id)
