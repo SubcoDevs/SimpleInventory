@@ -13,7 +13,7 @@
         <legend>New Item</legend>
         <div>
         <div>
-            <input type="button" id="btnDetails" value="+ Details" onclick="onclickDetails()" />
+            <input type="button" class="link_a" id="btnDetails" value="+ Details" onclick="onclickDetails()" />
         </div>
         <div class="toggle1" id="divDetails">
             <div>
@@ -28,7 +28,7 @@
             <div>
                 <div style="float:left;">
                     <div class="editor-label" style="">
-                        @Html.LabelFor(model => model.Name)
+                        @Html.LabelFor(model => model.Name, new { @class = "required" })
                                   
                         @Html.EditorFor(model => model.Name)
                         @Html.ValidationMessageFor(model => model.Name)&nbsp;&nbsp;&nbsp;
@@ -47,7 +47,7 @@
             <div>
                 <div style="float:left;">
                     <div class="editor-label">
-                        @Html.LabelFor(model => model.Number)
+                        @Html.LabelFor(model => model.Number, new { @class = "required" })
                     </div>
                     <div class="editor-field">
                         @Html.EditorFor(model => model.Number)
@@ -56,7 +56,7 @@
                 </div>
                 <div>
                     <div class="editor-label">
-                        @Html.LabelFor(model => model.KnownAs)
+                        @Html.LabelFor(model => model.KnownAs, new { @class = "required" })
                     </div>
                     <div class="editor-field">
                         @Html.EditorFor(model => model.KnownAs)
@@ -95,7 +95,7 @@
             <div>
                 <div style="">
                     <div class="editor-label">
-                        @Html.LabelFor(model => model.Stock)
+                        @Html.LabelFor(model => model.Stock, new { @class = "required" })
                     </div>
                     <div class="editor-field">
                         @Html.EditorFor(model => model.Stock)
@@ -147,7 +147,7 @@
 
         <div>
             <div>
-                <input type="button" id="btnImages" value="+ Images" onclick="onclickImages()" />
+                <input type="button" id="btnImages" class="link_a" value="+ Images" onclick="onclickImages()" />
             </div>
 
             <div class="toggle1" id="divImages">
@@ -157,7 +157,7 @@
 
         <div>
             <div>
-                <input type="button" id="btnItemLocations" value="+ Item locations" onclick="onclickItemLocations()" />
+                <input type="button" id="btnItemLocations" class="link_a" value="+ Item locations" onclick="onclickItemLocations()" />
             </div>
 
             <div class="toggle1" id="divItemLocations">
@@ -166,14 +166,14 @@
         </div>
         <div>
         <div>
-            <input type="button" id="btnPricing" value="+ Pricing & Taxes" onclick="onclickPricing()" />
+            <input type="button" id="btnPricing" class="link_a" value="+ Pricing & Taxes" onclick="onclickPricing()" />
         </div>
 
         <div class="toggle1" id="divPricing">
             <div>
                 <div style="float:left;">
                     <div class="editor-label">
-                        @Html.LabelFor(model => model.WholesalePrice)
+                        @Html.LabelFor(model => model.WholesalePrice, new { @class = "required" })
                     </div>
                     <div class="editor-field">
                         @Html.EditorFor(model => model.WholesalePrice)
@@ -182,7 +182,7 @@
                 </div>
                 <div>
                     <div class="editor-label">
-                        @Html.LabelFor(model => model.RetailPrice)
+                        @Html.LabelFor(model => model.RetailPrice, new { @class = "required" })
                     </div>
                     <div class="editor-field">
                         @Html.EditorFor(model => model.RetailPrice)
@@ -193,7 +193,7 @@
             <div>
                 <div style="float:left;">
                     <div class="editor-label">
-                        @Html.LabelFor(model => model.BuyPrice)
+                        @Html.LabelFor(model => model.BuyPrice, new { @class = "required" })
                     </div>
                     <div class="editor-field">
                         @Html.EditorFor(model => model.BuyPrice)
@@ -202,7 +202,7 @@
                 </div>
                 <div>
                     <div class="editor-label">
-                        @Html.LabelFor(model => model.InitialCostPrice)
+                        @Html.LabelFor(model => model.InitialCostPrice, new { @class = "required" })
                     </div>
                     <div class="editor-field">
                         @Html.EditorFor(model => model.InitialCostPrice)
@@ -232,11 +232,13 @@
             </div>
          </div>*@
         <div>
-            <input type="submit" value="Create" />
+            <input type="submit" class="btn_style" value="Create" />
         </div>
     </fieldset>
 }
 
+
+<div class="div_asteric">* sign fields are mendatory.</div>
 
 <div>
     @Html.ActionLink("Back to List", "Index")
@@ -244,6 +246,7 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+    @Styles.Render("~/Content/css")
 
     <script>
         function onclickDetails() {
