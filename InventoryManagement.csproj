@@ -187,6 +187,7 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\InventoryManagementContext.cs" />
+    <Compile Include="Models\ItemRelationship.cs" />
     <Compile Include="Models\Order1.cs" />
     <Compile Include="Models\Product.cs">
       <SubType>Code</SubType>
@@ -414,6 +415,8 @@
     <Content Include="Views\SubProduct\Edit.cshtml" />
     <Content Include="Views\SubProduct\Index.cshtml" />
     <Content Include="Scripts\media\images\Sorting icons.psd" />
+    <Content Include="Views\Inventory\Relationship.cshtml" />
+    <Content Include="Views\Inventory\AddNewRelationship.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

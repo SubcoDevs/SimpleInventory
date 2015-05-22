@@ -1,0 +1,57 @@
+﻿@*@model  (IEnumerable<InventoryManagement.Models.ItemRelationship>)ViewData["Relationship"]*@
+
+@{
+    ViewBag.Title = "Item Relationship";
+}
+
+<h2>Item Relationship</h2>
+
+
+<table id="table_Relationship">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayName("Subitem Name")
+            </th>
+            <th>
+                @Html.DisplayName("Quantity")
+            </th>
+            <th>
+                @Html.DisplayName("Unit")
+            </th>
+            <th>
+                @Html.DisplayName("Unit Price")
+            </th>
+            <th>
+                @Html.DisplayName("Cost")
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var relationship in ((IEnumerable<InventoryManagement.Models.ItemRelationship>)ViewData["Relationship"]))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => relationship.SubItemName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => relationship.Quantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => relationship.Unit)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => relationship.UnitPrice);
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => relationship.Cost)
+                </td>
+            </tr>
+        }
+</tbody>
+</table>
+
+<div>
+    @*@Html.ActionLink("Add New Relationship", "AddNewRelationship", new { id = @ViewBag.ItemId})*@
+    @Html.ActionLink("Add New Relationship", "AddNewRelationship")
+</div>

@@ -2,6 +2,7 @@
 using PagedList;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Data;
 using System.IO;
 using System.Linq;
@@ -19,8 +20,6 @@ namespace InventoryManagement.Controllers
         // GET: /Inventory/
 
         ProductDb _db = new ProductDb();
-
-        
 
         //public ActionResult Index(string sortOrder, string CurrentSort, int? page)
         public ActionResult Index()
@@ -226,6 +225,15 @@ namespace InventoryManagement.Controllers
             //var temp = _userProfile.GetPropertyValue("ClientId");
 
 
+            // For testing
+            //TempData["ItemId"] = Id;
+            //ViewBag.ItemId = Id;
+            Session["ItemId"] = Id;
+            var modelRelationship = _db.ItemRelationships.ToList().Where(m => m.ItemId == Id);
+
+            ViewData["Relationship"] = modelRelationship;
+            // End testing code
+
             return View(model);
         }
 
@@ -242,17 +250,18 @@ namespace InventoryManagement.Controllers
             return View(product);
         }
 
-        //[HttpGet]
-        //public ActionResult Relationship(int Id)
-        //{
-        //    //var model = _db.ItemRelationships.Find(Id);
-        //    //ViewBag.ItemId = Id;
-        //    TempData["ItemId"] = Id;
-        //    var model = _db.ItemRelationships.ToList().Where(m => m.ItemId == Id);
+        [HttpGet]
+        public ActionResult Relationship(int Id)
+        {
+            //var model = _db.ItemRelationships.Find(Id);
+            //ViewBag.ItemId = Id;
+            //ViewData["ItemId"] = Id;
+            //Session["ItemId"] = Id;
+            var model = _db.ItemRelationships.ToList().Where(m => m.ItemId == Id);
 
-        //    return View(model);
-        //    //return View();
-        //}
+            return View(model);
+            //return View();
+        }
 
         //[HttpPost]
         //public ActionResult Relationship(Product product)
@@ -276,29 +285,40 @@ namespace InventoryManagement.Controllers
             //ViewBag.ItemId = Id;
             //return View(model);
 
+            var model = _db.Products.ToList().Where(m => m.SaleableItem != true);
+
             List<SelectListItem> li = new List<SelectListItem>();
             li.Add(new SelectListItem { Text = "Select", Value = "0" });
-            li.Add(new SelectListItem { Text = "Cloth", Value = "9" });
-            li.Add(new SelectListItem { Text = "Zip", Value = "10" });
+            //li.Add(new SelectListItem { Text = "Cloth", Value = "9" });
+            //li.Add(new SelectListItem { Text = "Zip", Value = "10" });
+
+            foreach (var item in model)
+            {
+                li.Add(new SelectListItem { Text = item.Name, Value = item.Id.ToString() });
+            }
             
-            ViewData["SubItem"] = li;
+            Session["SubItem"] = li;
+            //TempData["ItemId1"] = TempData["ItemId"];
+            //ViewBag.ItemId = TempData["ItemId"];
             return View();
         }
 
-        //[HttpPost]
-        //public ActionResult AddNewRelationship(ItemRelationship itemRelationship)
-        //{
+        [HttpPost]
+        public ActionResult AddNewRelationship(ItemRelationship itemRelationship)
+        {
 
-        //    if (ModelState.IsValid)
-        //    {
-        //        itemRelationship.ItemId = Convert.ToInt32(TempData["ItemId"]);
-        //        _db.ItemRelationships.Add(itemRelationship);
-        //        _db.SaveChanges();
-        //        //return RedirectToAction("Relationship", itemRelationship.ItemId);
-        //        return RedirectToAction("Index");
-        //    }
-        //    return View(itemRelationship);
-        //}
+            if (ModelState.IsValid)
+            {
+                itemRelationship.ItemId = Convert.ToInt32(Session["ItemId"]);
+                itemRelationship.SubItemName = ((List<SelectListItem>)Session["SubItem"]).Where(e => e.Value == itemRelationship.SubItemId.ToString()).FirstOrDefault().Text;
+                _db.ItemRelationships.Add(itemRelationship);
+                _db.SaveChanges();
+                //return RedirectToAction("Relationship", itemRelationship.ItemId);
+                //return RedirectToAction("Index");
+                return RedirectToAction("Edit", new { id = itemRelationship.ItemId });
+            }
+            return View(itemRelationship);
+        }
 
         [HttpGet]
         public ActionResult GoToSubproduct(int id)
@@ -322,6 +342,45 @@ namespace InventoryManagement.Controllers
             //}
             //return View(product);
         }
+
+        //public ActionResult WebgridSample()
+        //{
+        //    ObservableCollection<ItemRelationship> itemRelationshipList =
+        //        new ObservableCollection<ItemRelationship>();
+        //    itemRelationshipList.Add(new ItemRelationship
+        //    {
+        //        Id = 1,
+        //        ItemId = 101,
+        //        SubItemId = 201,
+        //        Quantity = 800,
+        //        Unit = "Computer",
+        //        UnitPrice = "test",
+        //        Cost = 123,
+                
+        //    });
+        //    itemRelationshipList.Add(new ItemRelationship
+        //    {
+        //        Id = 2,
+        //        ItemId = 102,
+        //        SubItemId = 202,
+        //        Quantity = 800,
+        //        Unit = "Computer",
+        //        UnitPrice = "test",
+        //        Cost = 123,
+        //    });
+        //    itemRelationshipList.Add(new ItemRelationship
+        //    {
+        //        Id = 3,
+        //        ItemId = 103,
+        //        SubItemId = 203,
+        //        Quantity = 800,
+        //        Unit = "Computer",
+        //        UnitPrice = "test",
+        //        Cost = 123,
+        //    });
+            
+        //    return View(itemRelationshipList);
+        //}
 
         public ActionResult ExportData()
         {

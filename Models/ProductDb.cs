@@ -16,16 +16,11 @@ namespace InventoryManagement.Models
         public DbSet<Product> Products { get; set; }
         public DbSet<UserProfile> UserProfiles { get; set; }
         public DbSet<Client> Clients { get; set; }
-
         public DbSet<Supplier> Suppliers { get; set; }
-
         public DbSet<SubProduct> SubProducts { get; set; }
-
         public DbSet<Order1> Order1 { get; set; }
-
-
         public DbSet<Tax12> Tax12 { get; set; }
-
+        public DbSet<ItemRelationship> ItemRelationships { get; set; }
         
     }
 }
